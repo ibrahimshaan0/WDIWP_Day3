@@ -1,0 +1,105 @@
+// Primary Button 
+
+.primary-btn {
+    display: inline-block;
+    padding: 14px 24px;
+    color: var(--zo-common-white);
+    background: var(--zo-theme-primary);
+    border: 1px solid var(--zo-theme-primary);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: var(--zo-fz-button);
+    line-height: var(--zo-lh-btn);
+    font-family: var(--zo-ff-button);
+    font-weight: var(--zo-fw-sbold);
+    cursor: pointer;
+    @include transition(0.4s);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--zo-theme-secondary);
+        z-index: -1;
+        @include transition(0.4s);
+    }
+    &:hover {
+        color: var(--zo-common-white);
+        border: 1px solid var(--zo-theme-secondary);
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+// Secondary Button 
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 24px;
+    color: var(--zo-common-white);
+    background: var(--zo-theme-secondary);
+    border: 1px solid var(--zo-theme-secondary);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: var(--zo-fz-button);
+    line-height: var(--zo-lh-btn);
+    font-family: var(--zo-ff-button);
+    font-weight: var(--zo-fw-sbold);
+    cursor: pointer;
+    @include transition(0.4s);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background: var(--zo-theme-primary);
+        z-index: -1;
+        @include transition(0.4s);
+    }
+    &:hover {
+        color: var(--zo-common-white);
+        border: 1px solid var(--zo-theme-primary);
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+// Icon Button
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    svg {
+        width: 24px;
+    }
+    i {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: var(--zo-fw-regular);
+        color: var(--zo-common-white);
+    }
+}
+
+// Text Button with Icon
+.read-more-btn {
+    font-size: var(--zo-fz-button);
+    line-height: var(--zo-lh-btn);
+    font-weight: var(--zo-fw-sbold);
+    svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+}
+

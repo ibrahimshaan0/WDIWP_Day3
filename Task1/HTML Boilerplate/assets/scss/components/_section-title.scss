@@ -1,0 +1,26 @@
+.section-heading {
+    .sub-heading {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 8px;
+        svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--zo-theme-primary);
+            @media #{ $xs, $sm } {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        span {
+            font-size: var(--zo-fz-h4);
+            line-height: 1.4;
+            color: var(--zo-theme-primary);
+            font-weight: var(--zo-fw-medium);
+            @media #{ $xs, $sm } {
+                font-size: 18px;
+            }
+        }
+    }
+}

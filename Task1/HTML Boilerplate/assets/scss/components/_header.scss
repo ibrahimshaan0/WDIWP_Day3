@@ -1,0 +1,173 @@
+.header-top-area {
+    background: #0D2924;
+    padding: 12px 0;
+    @media(max-width: 768px) {
+        display: none;
+    }
+    .active-hour {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 13px;
+        .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--zo-common-white);
+            border-radius: 4px;
+        }
+        h6 {
+            color: var(--zo-common-white);
+            font-size: 16px;
+            line-height: 24px;
+        }
+        p {
+            font-size: var(--zo-fz-body-1);
+            line-height: var(--zo-lh-body-1);
+            color: var(--zo-common-light-white);
+        }
+    }
+    p {
+        font-size: var(--zo-fz-body-1);
+        line-height: var(--zo-lh-body-1);
+        color: var(--zo-common-light-white);
+        text-align: center;
+    }
+    .account-wrapper {
+        text-align: end;
+        span,
+        a {
+            position: relative;
+            font-size: var(--zo-fz-body-1);
+            line-height: var(--zo-lh-body-1);
+            color: var(--zo-common-white);
+            transition: all 0.3s ease-in-out;
+        }
+        a::after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 1px;
+            content: "";
+            background-color: var(--zo-common-white);
+            @include transition(0.4s);
+        }
+        a:hover {
+            &::after {
+                width: 100%;
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+}
+.header-main-area {
+    padding: 24px 0px;
+    .logo-area {
+        img {
+            max-width: 163px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    .right-action-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 24px;
+        @media #{$lg} {
+            gap: 16px;
+        }
+        @media(min-width: 1200px) and (max-width: 1224px) {
+            gap: 20px;
+        }
+        @media #{$xss} {
+            justify-content: center;
+        }
+        .header-search {
+            display: inline;
+            border-right: 1px solid #EDEFF3;
+            padding-right: 24px;
+            @media #{$lg} {
+                padding-right: 16px;
+            }
+            @media(min-width: 1200px) and (max-width: 1224px) {
+                padding-right: 20px;
+            }
+            a {
+                @include transition(0.3s);
+
+                i {
+                    font-size: 24px;
+                }
+                &:hover {
+                    color: var(--zo-theme-primary);
+                }
+            }
+        }
+
+        .header-offcanvas-menu {
+            display: inline;
+            a {
+                @include transition(0.3s);
+
+                i {
+                    font-size: 24px;
+                }
+
+                &:hover {
+                    color: var(--zo-theme-primary);
+                }
+            }
+            @media( min-width:992px ) {
+                display: none;
+            }
+        }
+
+        .header-btn {
+            display: inline;
+            @media (max-width: 767px) {
+                display: none;
+            }
+            .primary-btn {
+                @media #{ $lg } {
+                    font-size: 14px;
+                    padding: 15px;
+                }
+                @media(min-width: 1200px) and (max-width: 1224px) {
+                    font-size: 14px;
+                    padding: 14px 16px;
+                }
+            }
+        }
+    }
+}
+
+.header-main-area {
+  position: relative;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--zo-common-white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
