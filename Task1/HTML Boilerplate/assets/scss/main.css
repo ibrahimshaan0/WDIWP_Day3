@@ -1,16 +1,1 @@
-main section {
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-section.section-lg-space-x {
-  padding: 4rem 0;
-}
-section.section-lg-space-x .landing-title {
-  font-family: outfit, sans-serif;
-}
-section.section-lg-space-x .card-primary * {
-  background-color: rgb(15, 98, 106) !important;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
