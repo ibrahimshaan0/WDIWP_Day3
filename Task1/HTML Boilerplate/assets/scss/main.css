@@ -57,6 +57,10 @@ main .card {
 main .card .card-body {
   padding: 1.125rem 1.5rem;
 }
+main section.element-section .card-primary :hover .element-card-image {
+  visibility: visible;
+  opacity: 1;
+}
 main section.element-section .element-card {
   position: relative;
   width: 100%;
@@ -74,7 +78,7 @@ main section.element-section .element-card .element-card-image {
   top: -17px;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 main section.element-section .element-card .btn-light-white {
   border-color: transparent;
@@ -87,10 +91,6 @@ main section.element-section .element-card .btn {
 }
 main section.element-section .element-card .btn :hover {
   position: relative;
-}
-main section.element-section .element-card :hover .element-card-image {
-  visibility: visible;
-  opacity: 1;
 }
 main section.element-section .element-content .btn.icon-btn {
   font-size: 1.3rem;

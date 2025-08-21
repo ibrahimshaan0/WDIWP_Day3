@@ -68,7 +68,20 @@ main {
         }
     }
 
+
+
     section.element-section {
+        .card-primary {
+            :hover {
+                // background-color: red;
+
+                .element-card-image {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+
         .element-card {
             position: relative;
             width: 100%;
@@ -87,7 +100,7 @@ main {
                 top: -17px;
                 opacity: 0;
                 visibility: hidden;
-                transition: all .2s;
+                transition: all .3s;
             }
 
             .btn-light-white {
@@ -107,12 +120,7 @@ main {
                 }
             }
 
-            :hover {
-                .element-card-image {
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
+
 
         }
 
