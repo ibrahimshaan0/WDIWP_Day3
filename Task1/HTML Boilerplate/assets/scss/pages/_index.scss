@@ -52,7 +52,7 @@ main {
     }
 
     .card-primary * {
-        color: rgba(255, 255, 255, 1) !important;
+        color: rgba(255, 255, 255, 1);
     }
 
     .card {
@@ -107,17 +107,21 @@ main {
                 }
             }
 
+            :hover {
+                .element-card-image {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
         }
 
-        :hover {
-            .element-card-img {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
 
         .element-content {
-            .btn .icon-btn {
+            .btn.icon-btn {
+                font-size: 1.3rem;
+                height: 37px;
+                width: 37px;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -125,7 +129,14 @@ main {
                 z-index: 1;
             }
 
-            .btn-white {
+
+
+        }
+
+        .btn-white {
+            color: rgba(40, 35, 45, 1) !important;
+
+            * {
                 color: rgba(40, 35, 45, 1) !important;
             }
         }

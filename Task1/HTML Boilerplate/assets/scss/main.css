@@ -44,7 +44,7 @@ main .card-primary {
   background-color: rgb(15, 98, 106) !important;
 }
 main .card-primary * {
-  color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255);
 }
 main .card {
   box-shadow: 0.1rem 0.5rem 0 rgba(40, 35, 45, 0.1);
@@ -88,18 +88,24 @@ main section.element-section .element-card .btn {
 main section.element-section .element-card .btn :hover {
   position: relative;
 }
-main section.element-section :hover .element-card-img {
+main section.element-section .element-card :hover .element-card-image {
   visibility: visible;
   opacity: 1;
 }
-main section.element-section .element-content .btn .icon-btn {
+main section.element-section .element-content .btn.icon-btn {
+  font-size: 1.3rem;
+  height: 37px;
+  width: 37px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   z-index: 1;
 }
-main section.element-section .element-content .btn-white {
+main section.element-section .btn-white {
+  color: rgb(40, 35, 45) !important;
+}
+main section.element-section .btn-white * {
   color: rgb(40, 35, 45) !important;
 }
 main .text-dark {
