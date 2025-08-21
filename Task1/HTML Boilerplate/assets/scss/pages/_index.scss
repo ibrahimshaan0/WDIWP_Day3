@@ -1,3 +1,9 @@
+// $white: 255, 255, 255;
+// $dark: 40, 35, 45;
+// $primary: 15, 98, 106;
+// $secondary: 255, 193, 7;
+
+
 main {
     section {
         max-width: 100%;
@@ -72,7 +78,7 @@ main {
 
     section.element-section {
         .card-primary {
-            :hover {
+            &:hover {
                 // background-color: red;
 
                 .element-card-image {
@@ -104,15 +110,18 @@ main {
             }
 
             .btn-light-white {
-                border-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0);
                 background-color: rgba(255, 255, 255, 0.1);
 
-
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border: 1px solid rgba(255, 255, 255, 1);
+                }
             }
 
             .btn {
                 padding: 7px 25px;
-                font-size: var(15px);
+                font-size: 15px;
                 border-radius: 5px;
 
                 :hover {

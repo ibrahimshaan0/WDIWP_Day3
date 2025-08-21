@@ -57,7 +57,7 @@ main .card {
 main .card .card-body {
   padding: 1.125rem 1.5rem;
 }
-main section.element-section .card-primary :hover .element-card-image {
+main section.element-section .card-primary:hover .element-card-image {
   visibility: visible;
   opacity: 1;
 }
@@ -81,12 +81,16 @@ main section.element-section .element-card .element-card-image {
   transition: all 0.3s;
 }
 main section.element-section .element-card .btn-light-white {
-  border-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0.1);
+}
+main section.element-section .element-card .btn-light-white:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(255, 255, 255);
 }
 main section.element-section .element-card .btn {
   padding: 7px 25px;
-  font-size: var(15px);
+  font-size: 15px;
   border-radius: 5px;
 }
 main section.element-section .element-card .btn :hover {
